@@ -26,6 +26,7 @@
     UIColor *randomColor = [self.colorWheel randomColor];
     self.funFactLabel.text = [self.factBook randomFact];
     self.view.backgroundColor = randomColor;
+    self.funFactButton.tintColor = randomColor;
 }
 
 - (void)didReceiveMemoryWarning {

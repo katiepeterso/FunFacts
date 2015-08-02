@@ -22,7 +22,7 @@
 		<key>275C7414403141D472A8E7892DF4AB9E44491CD3</key>
 		<string>../..</string>
 		<key>DC22E5519872F76C77D53A43655886FBD8E7A803</key>
-		<string>../../../..</string>
+		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/katiepeterso/FunFacts.git</string>
@@ -38,7 +38,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>DC22E5519872F76C77D53A43655886FBD8E7A803</string>
 			<key>IDESourceControlWCCName</key>
-			<string>..</string>
+			<string></string>
 		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
