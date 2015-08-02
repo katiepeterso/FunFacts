@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,14 +17,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="An interesting fact goes here" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zV5-Kq-qsP">
-                                <rect key="frame" x="16" y="137" width="288" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="An interesting fact goes here" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zV5-Kq-qsP">
+                                <rect key="frame" x="48" y="189" width="225" height="45"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="19"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BCR-Yl-NUp">
-                                <rect key="frame" x="70" y="269" width="180" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BCR-Yl-NUp">
+                                <rect key="frame" x="48" y="448" width="225" height="61"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="emE-D7-VXi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                <color key="tintColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Show another Fun Fact">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -31,10 +38,31 @@
                                     <action selector="showFunFact" destination="vXZ-lx-hvc" eventType="touchUpInside" id="0Bb-u6-dDJ"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Did you know?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tcS-nI-0KL">
+                                <rect key="frame" x="52" y="60" width="116" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="Fd6-Vb-Vnk"/>
+                                    <constraint firstAttribute="width" constant="116" id="qlT-fQ-Y62"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="BCR-Yl-NUp" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="48" id="419-Rz-31Y"/>
+                            <constraint firstItem="tcS-nI-0KL" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="40" id="5oX-0D-MOO"/>
+                            <constraint firstAttribute="trailing" secondItem="BCR-Yl-NUp" secondAttribute="trailing" constant="47" id="HA6-PH-U7a"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zV5-Kq-qsP" secondAttribute="trailing" constant="31" id="SIJ-xg-wAr"/>
+                            <constraint firstItem="zV5-Kq-qsP" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="32" id="fsX-bf-eCI"/>
+                            <constraint firstAttribute="centerY" secondItem="zV5-Kq-qsP" secondAttribute="centerY" constant="72.5" id="gcy-17-rDx"/>
+                            <constraint firstItem="tcS-nI-0KL" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="36" id="oFl-lI-ZYi"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="BCR-Yl-NUp" secondAttribute="bottom" constant="59" id="vke-Bl-y6g"/>
+                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="funFactButtom" destination="BCR-Yl-NUp" id="21O-g5-VRF"/>
                         <outlet property="funFactLabel" destination="zV5-Kq-qsP" id="aPz-gj-W52"/>
                     </connections>
                 </viewController>
