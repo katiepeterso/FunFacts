@@ -23,5 +23,11 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (IBAction)showFunFact {
+    self.funFactLabel.text = @"Another interesting fact";
+    
+}
+
+
 
 @end
